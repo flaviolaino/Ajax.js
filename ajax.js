@@ -1,6 +1,6 @@
 var ajax = function(url, method, data){
 	this.url = url;
-	this.method = method;
+	this.method = method ? method.toUpperCase() : '';
 	this.data = data;
 
 	urlify_data = function(data, prefix){
